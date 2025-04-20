@@ -19,21 +19,52 @@ namespace BitcoinCalculatorAlanMarkusUnt
         {
             InitializeComponent();
         }
+        private void Display(float rate, string symbol)
+        {
+            ResultLabel.Visible = true;
+            TulemusLabel.Visible = true;
+            float result = float.Parse(BitcoinAmountInput.Text) * rate;
+            ResultLabel.Text = $"{result} {symbol}";
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (CurrencySelector.SelectedItem.ToString() != "USD" || CurrencySelector.SelectedItem.ToString() != "GBP" || CurrencySelector.SelectedItem.ToString() != "EUR" || CurrencySelector.SelectedItem.ToString() != "EEK")
+            float amount;
+            bool success = float.TryParse(BitcoinAmountInput.Text, out amount);
+            if (!success || amount <= 0f)
             {
-                //MessageBox errorbox = new MessageBox("palun vali valuuta","error",MessageBoxButtons.OK);
-                //errorbox.Show();
+                MessageBox.Show("Arv on negatiivne või ei ole arv", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            if (CurrencySelector.SelectedItem.ToString() == "USD") 
+            if (CurrencySelector.SelectedItem == null)
             {
-                ResultLabel.Visible = true;
-                TulemusLabel.Visible = true;
-                BitcoinRates newbitcoinrate = GetRates();
-                float result = float.Parse(BitcoinAmountInput.Text)*(float)newbitcoinrate.Data.BTCUSD.PRICE;
-                ResultLabel.Text = $"{result} Bitcoin dollarites";
+                MessageBox.Show("Palun vali valuuta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            string selectedCurrency = CurrencySelector.SelectedItem.ToString();
+            if (selectedCurrency == "USD")
+            {
+                BitcoinRates bitcoinRates = GetRates();
+                Display((float)bitcoinRates.Data.BTCUSD.VALUE, "$");
+            }
+            else if (selectedCurrency == "EUR")
+            {
+                BitcoinRates bitcoinRates = GetRates();
+                Display((float)bitcoinRates.Data.BTCEUR.VALUE, "€");
+            }
+            else if (selectedCurrency == "GBP")
+            {
+                BitcoinRates bitcoinRates = GetRates();
+                Display((float)bitcoinRates.Data.BTCGBP.VALUE, "£");
+            }
+            else if (selectedCurrency == "EEK")
+            {
+                BitcoinRates bitcoinRates = GetRates();
+                Display((float)bitcoinRates.Data.BTCEUR.VALUE * 15.6466f, "EEK");
+            }
+            else
+            {
+                MessageBox.Show("Palun vali valuuta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         public static BitcoinRates GetRates()

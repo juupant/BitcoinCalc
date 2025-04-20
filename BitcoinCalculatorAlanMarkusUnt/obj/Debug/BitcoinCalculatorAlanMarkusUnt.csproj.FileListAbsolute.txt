@@ -24,3 +24,16 @@ C:\Users\Alan Markus\Source\Repos\TarPE23UntAinemapp\BitcoinCalculatorAlanMarkus
 C:\Users\Alan Markus\Source\Repos\TarPE23UntAinemapp\BitcoinCalculatorAlanMarkusUnt\BitcoinCalculatorAlanMarkusUnt\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Alan Markus\Source\Repos\TarPE23UntAinemapp\BitcoinCalculatorAlanMarkusUnt\BitcoinCalculatorAlanMarkusUnt\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Alan Markus\Source\Repos\TarPE23UntAinemapp\BitcoinCalculatorAlanMarkusUnt\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.csproj.CopyComplete
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\bin\Debug\BitcoinCalculatorAlanMarkusUnt.exe.config
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\bin\Debug\BitcoinCalculatorAlanMarkusUnt.exe
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\bin\Debug\BitcoinCalculatorAlanMarkusUnt.pdb
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.csproj.AssemblyReference.cache
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.Form1.resources
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.Properties.Resources.resources
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.csproj.GenerateResource.cache
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.csproj.CoreCompileInputs.cache
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.csproj.CopyComplete
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.exe
+C:\Users\Alan Markus\Source\Repos\BitcoinCalc\BitcoinCalculatorAlanMarkusUnt\obj\Debug\BitcoinCalculatorAlanMarkusUnt.pdb
